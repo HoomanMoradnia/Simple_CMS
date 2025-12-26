@@ -1,9 +1,9 @@
 from django.shortcuts import render
-from .models import Post
+from .models import Article
 from django.template import loader
 from django.http import HttpResponse
 
 
 def main_page(request):
-    template = loader.get_template('main_page.html')
-    return HttpResponse(template.render())
+    articles = Article.published.all()
+    return render(request, 'blogs/list.html', {'articles': articles})
