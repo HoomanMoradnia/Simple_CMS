@@ -1,7 +1,9 @@
 from django.shortcuts import render
+from .models import Post
+from django.template import loader
 from django.http import HttpResponse
 
-# Create your views here.
 
-def hello(request):
-    return HttpResponse("hello world")
+def main_page(request):
+    template = loader.get_template('main_page.html')
+    return HttpResponse(template.render())
