@@ -21,5 +21,8 @@ from weblog import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.hello, name='hello'),
+    path('', views.main_page),
+    # path('about/', views.about),
+    # path('contact/', views.contact),
+    # path('blog/', views.blog),
 ]
