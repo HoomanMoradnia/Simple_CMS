@@ -7,13 +7,16 @@ class ArticleAdmin(admin.ModelAdmin):
 
     fieldsets = [
         (None, {
-            'fields': ['title', 'content', 'author', 'status']
+            'fields': ['title', 'author', 'status', 'slug', 'image']
+        }),
+        ('Content', {
+            'fields': ['content']
         }),
         ('Date information', {
             'fields': ['created_at', 'updated_at']
         }),
     ]
-    readonly_fields = ['created_at', 'updated_at']
+    readonly_fields = ['created_at', 'updated_at', 'slug']
     list_display = ['title', 'author', 'created_at', 'status']
     # list_filter = ['status', 'created_at']
     search_fields = ['title', 'content', 'author__username']
