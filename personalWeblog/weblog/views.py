@@ -7,3 +7,8 @@ from django.http import HttpResponse
 def main_page(request):
     articles = Article.published.all()
     return render(request, 'blogs/list.html', {'articles': articles})
+
+
+def article_detail(request, slug):
+    article = Article.published.get(slug=slug)
+    return render(request, 'blogs/detail.html', {'article': article})
