@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 col-md-offset-2 col-xs-12">
+        <div class="mainheading">
+            <h1 class="posttitle">{{ article.title }}</h1>
+            <hr>
+        </div>
+
+        {% if article.image %}
+            <img class="featured-image img-fluid" src="{{ article.image.url }}" alt="{{ article.title }}">
+        {% else %}
+            <img class="featured-image img-fluid" src="{% static 'assets/img/demopic/10.jpg' %}" alt="Default Image">
+        {% endif %}
+
+        <div class="article-post">
+            <p>{{ article.content|linebreaks }}</p>
+        </div>
+    </div>
+</div>
+
+<script src="{% static 'assets/js/mediumish.js' %}"></script>
+{% endblock content %}
