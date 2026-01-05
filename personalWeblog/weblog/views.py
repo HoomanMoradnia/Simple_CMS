@@ -11,4 +11,4 @@ def main_page(request):
 
 def article_detail(request, slug):
     article = Article.published.get(slug=slug)
-    return render(request, 'blogs/detail.html', {'article': article})
+    return render(request, 'blogs/post.html', {'article': article})
