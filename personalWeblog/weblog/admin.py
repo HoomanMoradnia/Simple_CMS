@@ -18,7 +18,7 @@ class ArticleAdmin(admin.ModelAdmin):
     ]
     readonly_fields = ['created_at', 'updated_at', 'slug']
     list_display = ['title', 'author', 'created_at', 'status']
-    # list_filter = ['status', 'created_at']
+    list_filter = ['status', 'created_at']
     search_fields = ['title', 'content', 'author__username']
     list_editable = ['status']
     list_per_page = 10
