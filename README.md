@@ -2,6 +2,8 @@
 
 A small Django-based content management / personal weblog project (HMBlogs) implementing a simple blog with posts, images and basic admin management. This project was scaffolded with Django 6.0 and uses a SQLite database by default. It includes a simple Article model, templates for listing posts and viewing a single post, and an admin configuration to manage articles.
 
+---
+
 ## Features
 
 - Create and manage blog articles via the Django admin.
@@ -10,6 +12,8 @@ A small Django-based content management / personal weblog project (HMBlogs) impl
 - Templates for list and detail views with static assets and a responsive layout.
 - Static and media handling configured (STATICFILES_DIRS and MEDIA_ROOT).
 - Ready-to-run with SQLite for local development.
+
+---
 
 ## Project structure (high-level)
 
@@ -20,6 +24,8 @@ A small Django-based content management / personal weblog project (HMBlogs) impl
 - static/ — static assets referenced by templates (expected)
 - media/ — uploaded images (configured by MEDIA_ROOT)
 - LICENSE
+
+---
 
 ## Requirements / Prerequisites
 
@@ -76,7 +82,9 @@ Note: The project’s settings currently include a SECRET_KEY and DEBUG=True. Fo
 
 8. Visit
    - Main site: http://127.0.0.1:8000/
-   - Admin: http://127.0.0.1:8000/admin/
+   - Admin: http://127.0.0.1:8000/admin
+  
+---
 
 ## Important configuration notes
 
@@ -86,6 +94,8 @@ Note: The project’s settings currently include a SECRET_KEY and DEBUG=True. Fo
 - Static & Media:
   - STATICFILES_DIRS = [ BASE_DIR / 'static' ]
   - MEDIA_ROOT is configured to ./media/ and MEDIA_URL = '/media/' (development serves media via urlpatterns when DEBUG=True)
+ 
+---
 
 ## Models & Admin
 
@@ -99,10 +109,8 @@ Article model (weblog/models.py) includes:
 Admin registration (weblog/admin.py) includes a customized ArticleAdmin with:
 - list_display, list_filter, search_fields, readonly_fields and basic fieldsets for easier management.
 
+---
+
 ## License
 
 This project is licensed under the MIT License — see the LICENSE file for details.
-
-## Author / Contact
-
-Hooman Moradnia — https://github.com/HoomanMoradnia
