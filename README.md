@@ -4,6 +4,18 @@ A small Django-based content management / personal weblog project (HMBlogs) impl
 
 ---
 
+## Table of Content
+
+- [Features](#Features)
+- [Project structure](#Project-structure)
+- [Requirements / Prerequisites](#Requirements-/-Prerequisites)
+- [Quick start](#Quick-start)
+- [Important configuration notes](#Important-configuration-notes)
+- [Models & Admin](#Models-&-Admin)
+- [License](#License)
+
+---
+
 ## Features
 
 - Create and manage blog articles via the Django admin.
@@ -15,7 +27,7 @@ A small Django-based content management / personal weblog project (HMBlogs) impl
 
 ---
 
-## Project structure (high-level)
+## Project structure
 
 - personalWeblog/
   - manage.py
@@ -50,12 +62,12 @@ Note: The project’s settings currently include a SECRET_KEY and DEBUG=True. Fo
    python -m venv venv
    ```
    
-   # On macOS / Linux
+   ### On macOS / Linux
      ```bash
      source venv/bin/activate
      ```
    
-   # On Windows (PowerShell)
+   ### On Windows (PowerShell)
      ```bash
      venv\Scripts\Activate.ps1
      ```
