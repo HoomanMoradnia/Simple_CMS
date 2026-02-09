@@ -8,10 +8,10 @@ A small Django-based content management / personal weblog project (HMBlogs) impl
 
 - [Features](#Features)
 - [Project structure](#Project-structure)
-- [Requirements / Prerequisites](#Requirements_/_Prerequisites)
+- [Requirements / Prerequisites](#Requirements--Prerequisites)
 - [Quick start](#Quick-start)
 - [Important configuration notes](#Important-configuration-notes)
-- [Models & Admin](#Models-&-Admin)
+- [Models & Admin](#Models--Admin)
 - [License](#License)
 
 ---
